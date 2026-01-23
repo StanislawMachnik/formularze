@@ -6,7 +6,7 @@ public class Auta {
     private int rocznik;
     private double cena;
     private boolean pierwszyWlasciciel;
-    private int historia;
+    private String historia;
 
     public String getMarka() {
         return marka;
@@ -48,11 +48,11 @@ public class Auta {
         this.pierwszyWlasciciel = pierwszyWlasciciel;
     }
 
-    public int getHistoria() {
+    public String getHistoria() {
         return historia;
     }
 
-    public void setHistoria(int historia) {
+    public void setHistoria(String historia) {
         this.historia = historia;
     }
 }

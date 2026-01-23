@@ -4,7 +4,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ListView;
+import android.widget.RadioButton;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -22,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
     private ListView lista;
     private SeekBar rok;
     private TextView rokTekst;
+    private CheckBox wlasciciel;
+    private RadioButton radio1;
+    private RadioButton radio2;
+    private RadioButton radio3;
+    private Button dodaj;
     private ArrayList<String> modelLista;
     private ArrayAdapter<String> arrayAdapter;
 
@@ -35,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
         spinner = findViewById(R.id.marki);
         rok = findViewById(R.id.rok);
         rokTekst = findViewById(R.id.rokTekst);
+        wlasciciel = findViewById(R.id.wlascicel);
+        radio1 = findViewById(R.id.radio1);
+        radio2 = findViewById(R.id.radio2);
+        radio3 = findViewById(R.id.radio3);
+        dodaj = findViewById(R.id.dodaj);
 
         String[][] tablica = {
                 {"Yaris", "Corolla", "RAV4"},
@@ -90,6 +103,16 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onStopTrackingTouch(SeekBar seekBar) {
 
+                    }
+                }
+        );
+        dodaj.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if(){
+
+                        }
                     }
                 }
         );
