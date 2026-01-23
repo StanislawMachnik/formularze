@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Lekcja</string>
+    <string-array name="marki_lista">
+        <item>Toyota</item>
+        <item>Ford</item>
+        <item>Honda</item>
+        <item>Opel</item>
+        <item>Renault</item>
+    </string-array>
 </resources>
